@@ -8,7 +8,7 @@
 
     <title>{{ config('blog.title') }} 管理后台</title>
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{URL:: asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
 
 </head>

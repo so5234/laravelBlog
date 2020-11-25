@@ -10,8 +10,12 @@
     <li @if (Request::is('admin/upload*')) class="nav-item active" @else class="nav-item" @endif>
     <a class="nav-link" href="/admin/upload">上传</a>
     </li>
+    <li @if (Request::is('admin/upload*')) class="nav-item active" @else class="nav-item" @endif>
+    <a class="nav-link" href="/logout">退出</a>
+    </li>
     @endauth
 </ul>
+
 
 <ul class="navbar-nav ml-auto">
     @guest
@@ -27,5 +31,17 @@
             <a class="dropdown-item" href="/logout">退出</a>
         </div>
     </li>
+
     @endguest
 </ul>
+
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+</div>
